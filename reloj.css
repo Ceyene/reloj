@@ -52,6 +52,12 @@ body {
     top: 49%;
     left: 39%;
 }
+/*Animación de las agujas*/
+@keyframes time {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /*Aguja Horas*/
 .smallClockHand {
     width: 150px;
@@ -70,6 +76,11 @@ body {
     height: 7px;
     width: 240px;
     top: 49.7%;
-    left: 40%;
+    left: 42%;
     z-index: 5;
+    animation-name: time;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    transform-origin: 20%;
 }
