@@ -5,6 +5,7 @@ body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 35%, rgba(0,212,255,1) 100%);
     box-sizing: border-box;
 }
+/*Fondo del reloj*/
 .clock {
     background: blanchedalmond url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
     background-size: 85%;
@@ -18,13 +19,20 @@ body {
     padding: 30px;
     position: relative;
 }
-
+/*Ubicación de las agujas*/
+.center,
+.smallClockHand,
+.bigClockHand,
+.clockHand {
+    position: absolute;
+}
+/*Color del centro y agujas de horas y minutos*/
 .center,
 .smallClockHand,
 .bigClockHand {
     background-color: black;
-    position: absolute;
 }
+/*El centro*/
 .center {
     border-radius: 50%;
     border: 3px solid goldenrod;
@@ -34,12 +42,34 @@ body {
     left: 47%;
     z-index: 2;
 }
-.smallClockHand {
+/*Agujas Horas y Minutos*/
+.smallClockHand,
+.bigClockHand {
+    border: 2px solid #79094d;
     border-top-right-radius: 35%;
     border-bottom-right-radius: 35%;
     height: 11px;
-    width: 170px;
     top: 49%;
-    left: 49%;
+    left: 39%;
+}
+/*Aguja Horas*/
+.smallClockHand {
+    width: 150px;
+    z-index: 4;
+}
+/*Aguja Minutos*/
+.bigClockHand {
+    width: 215px;
     z-index: 3;
+}
+/*Aguja Segundos*/
+.clockHand {
+    background-color: #2B8BBF;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    height: 7px;
+    width: 240px;
+    top: 49.7%;
+    left: 40%;
+    z-index: 5;
 }
