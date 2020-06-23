@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 35%, rgba(0,212,255,1) 100%);
+}
+.clock {
+    background-color: blanchedalmond;
+    -webkit-box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.53);
+    box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.53);
+    border-radius: 50%;
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+}
