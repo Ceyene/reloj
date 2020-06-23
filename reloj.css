@@ -38,7 +38,7 @@ body {
     border: 3px solid goldenrod;
     width: 5%;
     height: 5%;
-    top: 47%;
+    top: 46%;
     left: 47%;
     z-index: 2;
 }
@@ -49,8 +49,8 @@ body {
     border-top-right-radius: 35%;
     border-bottom-right-radius: 35%;
     height: 11px;
-    top: 49%;
-    left: 39%;
+    top: 48%;
+    left: 45%;
 }
 /*Animación de las agujas*/
 @keyframes time {
@@ -62,11 +62,25 @@ body {
 .smallClockHand {
     width: 150px;
     z-index: 4;
+    animation-name: time;
+    transform: rotate(120deg);
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    transform-origin: 18%;
+    animation-timing-function: steps(60);
 }
 /*Aguja Minutos*/
 .bigClockHand {
     width: 215px;
     z-index: 3;
+    animation-name: time;
+    transform: rotate(25deg);
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    transform-origin: 18%;
+    animation-timing-function: steps(60);
 }
 /*Aguja Segundos*/
 .clockHand {
@@ -75,12 +89,12 @@ body {
     border-bottom-right-radius: 40%;
     height: 7px;
     width: 240px;
-    top: 49.7%;
+    top: 48.7%;
     left: 42%;
     z-index: 5;
     animation-name: time;
     animation-duration: 60s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(60);
-    transform-origin: 20%;
+    transform-origin: 18%;
 }
