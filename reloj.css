@@ -3,15 +3,43 @@ body {
     padding: 0;
     height: 100vh;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 35%, rgba(0,212,255,1) 100%);
+    box-sizing: border-box;
 }
 .clock {
-    background-color: blanchedalmond;
+    background: blanchedalmond url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg) no-repeat center;
+    background-size: 85%;
     -webkit-box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.53);
     -moz-box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.53);
     box-shadow: 6px 6px 9px 0px rgba(0,0,0,0.53);
     border-radius: 50%;
     width: 500px;
+    height: 500px;
     margin: 20px auto;
     padding: 30px;
     position: relative;
+}
+
+.center,
+.smallClockHand,
+.bigClockHand {
+    background-color: black;
+    position: absolute;
+}
+.center {
+    border-radius: 50%;
+    border: 3px solid goldenrod;
+    width: 5%;
+    height: 5%;
+    top: 47%;
+    left: 47%;
+    z-index: 2;
+}
+.smallClockHand {
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+    height: 11px;
+    width: 170px;
+    top: 49%;
+    left: 49%;
+    z-index: 3;
 }
